@@ -1,0 +1,9 @@
+
+
+1.navbar
+2.hero
+3.About section
+4.Services
+5.skill section
+6.contact section
+7.projects
