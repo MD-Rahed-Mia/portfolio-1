@@ -6,6 +6,7 @@ import Hero from './component/Hero/Hero'
 import AboutMe from './component/AboutMe/AboutMe'
 import Services from './component/Services/Services'
 import Whyme from './component/Whyme/Whyme'
+import RecentWork from './component/RecentWork/RecentWork'
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
       </div>
 
       <Whyme />
-
+      <RecentWork />
     </>
   )
 }
