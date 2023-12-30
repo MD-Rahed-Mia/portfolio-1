@@ -8,22 +8,6 @@
   border-radius: 20px;
 }
 
-/* .about-me .h1 {
-  text-align: center;
-  color: var(--primary-color);
-  position: relative;
-} */
-
-/* .about-me .h1::after {
-  content: "";
-  position: absolute;
-  width: 80px;
-  bottom: -10px;
-  left: 45%;
-  height: 5px;
-  background: var(--primary-color);
-} */
-
 .am-container{
   display: grid;
   width: 100%;
