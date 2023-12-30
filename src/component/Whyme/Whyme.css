@@ -1,0 +1,46 @@
+.why-me {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: whitesmoke;
+  padding: 3rem;
+}
+
+.wm-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wm-title {
+  font-size: 4rem;
+}
+
+.wm-acordion {
+  width: 100%;
+}
+
+.wm-acordion ul li {
+  list-style: none;
+  background: white;
+  max-width: 700px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background 400ms;
+}
+
+.wm-acordion ul li:hover{
+  background: #6741d9;
+  color: white;
+}
+
+.wm-acordion ul li h1 {
+  font-weight: 400;
+}
+
+.wm-acordion ul li p {
+  font-size: 1.2rem;
+  opacity: 0.6;
+  margin-top: 1.5rem;
+}

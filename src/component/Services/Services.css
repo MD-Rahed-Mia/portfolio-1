@@ -19,11 +19,11 @@
   position: relative;
   width: 100%;
   min-height: 85vh;
-  margin-left: 150px;
+  margin-left: 80px;
 }
 .s-card {
-  width: 300px;
-  height: 380px;
+  width: 350px;
+  height: 350px;
   background: whitesmoke;
   color: black;
   padding: 2rem;
@@ -63,7 +63,8 @@
 }
 
 .s-card p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 400;
   margin-top: 1rem;
+  opacity: 0.6;
 }
