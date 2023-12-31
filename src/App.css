@@ -8,6 +8,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-color: #040b27;
   --pr-w: #fff;
@@ -22,4 +26,15 @@
 .container {
   width: 100%;
   min-height: 80vh;
+}
+
+.reveal {
+  transform: translateX(-350px);
+  transition: all 500ms;
+  opacity: 0;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
 }

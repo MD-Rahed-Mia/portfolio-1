@@ -8,7 +8,7 @@ import { FaCode } from "react-icons/fa";
 export default function Services() {
   return (
     <>
-      <div className="services">
+      <div className="services" id="service">
         <div className="service-top">
           <h1 className="s-title">
             Creating Interactive & Responsive <br /> Website Focusing on UI

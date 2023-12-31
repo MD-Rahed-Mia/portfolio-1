@@ -3,7 +3,7 @@ import "./Services.css";
 export default function ServiceCard(props) {
   return (
     <>
-      <div className="s-card ">
+      <div className="s-card">
         <div className="s-icon">
          {props.icon}
         </div>

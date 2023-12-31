@@ -73,3 +73,23 @@
   right: 2rem;
   font-size: 3rem;
 }
+
+@media screen and (max-width: 630px) {
+  .rw-cards {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 2rem;
+  }
+  .full-img {
+    width: 100%;
+    background: #000000b9;
+  }
+
+  .full-img img {
+    width: 100%;
+  }
+  
+
+}

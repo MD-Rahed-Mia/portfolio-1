@@ -48,17 +48,18 @@ export default function RecentWork() {
   const [img, setImg] = useState("");
 
   function viewImg(event) {
+    event.target.transition = "1s ease-in";
     setImg(event.target.src);
     setFullImg(() => true);
   }
 
-  function cancelFullimgFunc(){
-    setFullImg(() => false)
+  function cancelFullimgFunc() {
+    setFullImg(() => false);
   }
 
   return (
     <>
-      <div className="container">
+      <div className="container fade" id="projects">
         <div className="recent-work">
           {fullImg ? (
             <div className="full-img" onClick={cancelFullimgFunc}>
