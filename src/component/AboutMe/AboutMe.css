@@ -63,6 +63,9 @@
   .am-container-right p {
     font-size: 0.8rem;
   }
+  .am-container-right {
+    padding: 1rem;
+  }
   
 }
 
@@ -89,6 +92,9 @@
   }
   .am-container-right p {
     font-size: 1.1rem;
+  }
+  .am-container-right {
+    padding: .5rem;
   }
   
 }

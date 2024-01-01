@@ -90,11 +90,11 @@
 
   .s-card {
     margin: 0 auto;
-    width: 250px;
+    width: 300px;
   }
 
   .s-card p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .service-top p {
     margin-left: 1rem;
