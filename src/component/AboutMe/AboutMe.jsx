@@ -1,12 +1,9 @@
 import "./AboutMe.css";
 import { BiSolidCopyAlt } from "react-icons/bi";
 
-import { Fade } from "react-reveal";
-
 export default function AboutMe() {
   return (
     <>
-      <Fade left>
         <div className="container" id="aboutMe">
           <div className="about-me">
             <div className="am-container">
@@ -57,7 +54,6 @@ export default function AboutMe() {
             </div>
           </div>
         </div>
-      </Fade>
     </>
   );
 }

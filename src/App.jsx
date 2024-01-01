@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Fade } from "react-reveal";
 import "./App.css";
 import Navbar from "./component/Navbar/Navbar";
 import Hero from "./component/Hero/Hero";
@@ -16,18 +15,12 @@ function App() {
       <div className="body">
         <Hero />
         <AboutMe />
-        <Fade right>
           <Services />
-        </Fade>
       </div>
 
-      <Fade left>
         <Whyme />
-      </Fade>
 
-      <Fade right>
         <RecentWork />
-      </Fade>
     </>
   );
 }
