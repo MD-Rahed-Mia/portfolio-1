@@ -47,6 +47,35 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 1300px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+  .hl-content {
+    font-size: 2rem;
+  }
+  .hl-content h1 span {
+    font-size: 2.5rem;
+  }
+  .hero-img1 {
+    max-width: 68%;
+  }
+  .hero-bg {
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 620px) {
   .hero {
     display: grid;

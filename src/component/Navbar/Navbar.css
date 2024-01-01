@@ -49,14 +49,52 @@ nav ul li:hover {
 .menu-icon {
   display: none;
 }
+@media screen and (max-width: 1200px) {
+  .logo h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease-in;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .menu-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
 
 @media screen and (max-width: 600px) {
-  
-.logo h1 {
-  font-size: 2rem;
-  font-weight: bolder;
-  text-transform: uppercase;
-}
+  .logo h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
 
   nav {
     display: flex;

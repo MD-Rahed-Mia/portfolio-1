@@ -8,13 +8,18 @@ import { FaCode } from "react-icons/fa";
 export default function Services() {
   return (
     <>
-      <div className="services" id="service">
+      <div id="service"></div><br />
+      <div className="services">
         <div className="service-top">
           <h1 className="s-title">
             Creating Interactive & Responsive <br /> Website Focusing on UI
-            
           </h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, non. Suscipit <br /> molestias doloribus minima quibusdam eveniet modi, quo consequuntur culpa consectetur laborum eius deserunt <br /> perferendis soluta ullam omnis placeat labore.</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, non.
+            Suscipit <br /> molestias doloribus minima quibusdam eveniet modi,
+            quo consequuntur culpa consectetur laborum eius deserunt <br />{" "}
+            perferendis soluta ullam omnis placeat labore.
+          </p>
         </div>
         <div className="service-bottom">
           <div className="s-cards">

@@ -74,6 +74,38 @@
   font-size: 3rem;
 }
 
+#service {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .rw-cards {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    gap: 2rem;
+  }
+
+  .rw-title {
+    font-size: 2rem;
+  }
+  .full-img {
+    width: 100%;
+    background: #000000b9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    height: 100vh;
+  }
+
+  .full-img img {
+    width: 100%;
+  }
+  
+
+}
 @media screen and (max-width: 630px) {
   .rw-cards {
     margin-top: 3rem;
@@ -81,6 +113,10 @@
     grid-template-columns: 1fr;
     width: 90%;
     gap: 2rem;
+  }
+
+  .rw-title {
+    font-size: 2rem;
   }
   .full-img {
     width: 100%;

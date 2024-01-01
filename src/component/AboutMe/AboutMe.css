@@ -38,6 +38,33 @@
   user-select: none;
   line-height: 35px;
 }
+@media screen and (max-width: 1300px){
+  .about-me {
+    width: 90%;
+  }
+  .am-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns:1fr 1fr;
+    align-items: center;
+  }
+  .am-container-left{
+    padding: 0.5rem;
+  }
+
+  .am-container-left h3 {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+  .am-container-left h3 span {
+    font-size: 1rem;
+  }
+  .am-container-right p {
+    font-size: 0.8rem;
+  }
+  
+}
 
 @media screen and (max-width: 630px){
   .about-me {
