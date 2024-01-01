@@ -41,3 +41,11 @@ html {
   transform: translateX(0);
   opacity: 1;
 }
+
+.arrow-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  font-size: 2rem;
+  color: orangered;
+}

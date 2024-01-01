@@ -1,17 +1,19 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Contact.css";
+import Loading from "./../../../public/images/loading.gif";
 
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import EmailJs from "@emailjs/browser";
 
 export default function Contact() {
-
-  let [mailSucces, setMailSuccess] = useState(false)
-
+  let [mailSucces, setMailSuccess] = useState(false);
+  let [loading, setLoading] = useState(false);
   const form = useRef();
 
   const sendEmial = (event) => {
     event.preventDefault();
+
+    setLoading(true);
 
     EmailJs.sendForm(
       "service_nzdxfpa",
@@ -20,14 +22,21 @@ export default function Contact() {
       "4Fw4hl9kYvZZc8c1R"
     )
       .then((result) => {
+        setMailSuccess(true);
 
-        setMailSuccess(true)
-
-        form.current.reset()
-
+        form.current.reset();
+        setLoading(false);
       })
       .catch((err) => console.log(err));
   };
+
+  const time = setTimeout(() => {
+    setMailSuccess(false);
+  }, 5000);
+
+  useEffect(() => {
+    clearTimeout(time);
+  }, [mailSucces]);
 
   return (
     <>
@@ -45,15 +54,17 @@ export default function Contact() {
                   name="user_name"
                   id="name"
                   placeholder="example: John doe"
+                  required
                 />
               </div>
               <div>
                 <label htmlFor="email">Email</label>
                 <input
-                  type="text"
+                  type="email"
                   name="from_name"
                   id="email"
                   placeholder="example: johndoe@gmail.com"
+                  required
                 />
               </div>
               <div>
@@ -64,17 +75,23 @@ export default function Contact() {
                   placeholder="example: hello there."
                   cols="20"
                   rows="5"
+                  required
                 ></textarea>
               </div>
               <div>
+                {loading ? (
+                  <img src={Loading} alt="loading" className="loading" />
+                ) : (
+                  ""
+                )}
 
-              {
-                mailSucces &&  <p>Email has been sent.</p>
-              }
+                {mailSucces && (
+                  <p className="sm-note">Message has been sent.</p>
+                )}
               </div>
               <div>
                 <button type="submit" className="contactBtn">
-                  Send message
+                  send message
                 </button>
               </div>
             </form>
@@ -85,17 +102,17 @@ export default function Contact() {
           <div className="social-icon">
             <ul>
               <li>
-                <a href="#">
+                <a href="www.facebook.com/mdrahed24" target="blank">
                   <FaFacebook />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://github.com/MD-Rahed-Mia" target="blank">
                   <FaGithub />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/md-rahed-29b63a284/" target="blank">
                   <FaLinkedin />
                 </a>
               </li>

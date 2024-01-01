@@ -40,13 +40,17 @@ textarea {
 
 .contactBtn {
   width: 100%;
-  padding: 12px;
   font-size: 1.2rem;
   background: #5f3dc4;
   color: white;
   border: 2px solid #5f3dc4;
   border-radius: 10px;
   margin-top: 1rem;
+  padding: 10px;
+}
+
+.contactBtn img {
+  width: 70px;
 }
 
 
@@ -69,6 +73,15 @@ textarea {
   color: var(--primary-color);
   cursor: pointer;
   text-decoration: none;
+}
+
+.sm-note {
+  color: green;
+  font-size: 13px;
+}
+
+.loading {
+  width: 50px;
 }
 
 @media screen and (min-width: 630px) {

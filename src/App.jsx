@@ -7,6 +7,8 @@ import Services from "./component/Services/Services";
 import Whyme from "./component/Whyme/Whyme";
 import RecentWork from "./component/RecentWork/RecentWork";
 import Contact from "./component/Contact/Contact";
+import Footer from "./component/Footer/Footer";
+import ToBottom from "./component/To Bottom/ToBottom";
 
 function App() {
   return (
@@ -16,14 +18,18 @@ function App() {
       <div className="body">
         <Hero />
         <AboutMe />
-          <Services />
+        <Services />
       </div>
 
-        <Whyme />
+      <Whyme />
 
-        <RecentWork />
+      <RecentWork />
 
-        <Contact />
+      <Contact />
+
+      <Footer />
+
+      <ToBottom />
     </>
   );
 }

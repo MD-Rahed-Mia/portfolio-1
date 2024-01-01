@@ -6,7 +6,7 @@ import project1i2 from "./../../../public/images/rw_project1_img2.png";
 export default function RWCard(props) {
   return (
     <>
-      <div className="rw-card">
+      <div className="rw-card" key={props.hello}>
         <div className="rw-card__img">
           <div>
             <img src={props.img1} alt=""/>

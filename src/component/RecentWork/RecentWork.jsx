@@ -14,6 +14,7 @@ import { useState } from "react";
 
 const projects = [
   {
+    id: 1,
     img1: project1i1,
     img2: project1i2,
     img3: project1i3,
@@ -21,6 +22,7 @@ const projects = [
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos culpa cupiditate atque voluptas ex.",
   },
   {
+    id: 2,
     img1: Temporal1,
     img2: Temporal,
     img3: Temporal,
@@ -28,6 +30,7 @@ const projects = [
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos culpa cupiditate atque voluptas ex.",
   },
   {
+    id: 3,
     img1: Project3i1,
     img2: Project3i2,
     img3: Project3i2,
@@ -35,6 +38,7 @@ const projects = [
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos culpa cupiditate atque voluptas ex.",
   },
   {
+    id: 4,
     img1: Temporal1,
     img2: Temporal,
     img3: Temporal,
@@ -82,6 +86,7 @@ export default function RecentWork() {
                   title={element.title}
                   desc={element.desc}
                   clickFunc={viewImg}
+                  id={element.id}
                 />
               );
             })}
