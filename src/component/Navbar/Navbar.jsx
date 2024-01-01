@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { ImCancelCircle, ImMenu } from "react-icons/im";
 
 export default function Navbar() {
-  const [isMenuVisible, setMenuVisible] = useState(false);
+  let [isMenuVisible, setMenuVisible] = useState(false);
 
   function showMenu() {
     document.querySelector("ul").classList.toggle("active");
