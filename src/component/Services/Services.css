@@ -120,4 +120,7 @@
     min-height: 85vh;
     margin-left: 0px;
   }
+  .s-title {
+    font-size: 2.5rem;
+  }
 }

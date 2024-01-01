@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="hero-left">
           <div className="hl-content">
             {" "}
-            <h1>Hey! welcome</h1>
+            <h1>Welcome</h1>
             <h1>I'm <span>MD RAHED MIA</span></h1>
             <h3>Junior web developer. Front end specialist.</h3>
           </div>

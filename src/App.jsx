@@ -6,6 +6,7 @@ import AboutMe from "./component/AboutMe/AboutMe";
 import Services from "./component/Services/Services";
 import Whyme from "./component/Whyme/Whyme";
 import RecentWork from "./component/RecentWork/RecentWork";
+import Contact from "./component/Contact/Contact";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Whyme />
 
         <RecentWork />
+
+        <Contact />
     </>
   );
 }
