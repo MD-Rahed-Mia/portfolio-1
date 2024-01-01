@@ -49,6 +49,19 @@
     grid-template-columns:1fr;
   }
   .am-container-left{
-    padding: 1rem;
+    padding: 0.5rem;
   }
+
+  .am-container-left h3 {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+  .am-container-left h3 span {
+    font-size: 1rem;
+  }
+  .am-container-right p {
+    font-size: 1.1rem;
+  }
+  
 }

@@ -9,13 +9,13 @@ export default function RWCard(props) {
       <div className="rw-card">
         <div className="rw-card__img">
           <div>
-            <img src={props.img1} alt="" onClick={props.clickFunc} />
+            <img src={props.img1} alt=""/>
           </div>
           <div>
-            <img src={props.img2} alt="" onClick={props.clickFunc}  />
+            <img src={props.img2} alt=""/>
           </div>
           <div>
-            <img src={props.img3} alt=""  onClick={props.clickFunc} />
+            <img src={props.img3} alt=""/>
           </div>
         </div>
         <div className="rw-card__desc">

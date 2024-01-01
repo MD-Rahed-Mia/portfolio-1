@@ -88,6 +88,10 @@
     gap: 1rem;
     padding-bottom: 4rem;
   }
+
+  .s-card {
+    margin: 0 auto;
+  }
   .service-top p {
     margin-left: 1rem;
     font-size: 1.1rem;
@@ -109,5 +113,11 @@
   .s-card:nth-child(4) {
     position: static;
     background: #98f5ff;
+  }
+  .service-bottom {
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    margin-left: 0px;
   }
 }

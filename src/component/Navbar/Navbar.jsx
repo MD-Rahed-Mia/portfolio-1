@@ -1,13 +1,13 @@
+import { useState } from "react";
 import "./Navbar.css";
-import { FaRegSun } from "react-icons/fa";
+import { ImCancelCircle, ImMenu } from "react-icons/im";
 
 export default function Navbar() {
-  function handleClick(event) {
-    event.preventDefault();
-    const targetSection = document.getElementById("aboutMe");
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
+  const [isMenuVisible, setMenuVisible] = useState(false);
+
+  function showMenu() {
+    document.querySelector("ul").classList.toggle("active");
+    isMenuVisible = setMenuVisible(!isMenuVisible)
   }
 
   return (
@@ -15,23 +15,24 @@ export default function Navbar() {
       <nav>
         <div className="logo">
           <h1>Rahed</h1>
+          <div className="menu-icon" onClick={showMenu}>
+            {isMenuVisible ? <ImCancelCircle /> : <ImMenu />}
+          </div>
         </div>
         <ul>
-          <li className="active">
+          <li className="active" onClick={showMenu}>
             <a href="#hero">Home</a>
           </li>
-          <li>
-            <a href="#aboutMe" onClick={handleClick}>
-              About Me
-            </a>
+          <li onClick={showMenu}>
+            <a href="#aboutMe">About Me</a>
           </li>
-          <li>
+          <li onClick={showMenu}>
             <a href="#service">Service</a>
           </li>
-          <li>
+          <li onClick={showMenu}>
             <a href="#projects">Projects</a>
           </li>
-          <li>
+          <li onClick={showMenu}>
             <a href="#contact">Contact Me</a>
           </li>
         </ul>

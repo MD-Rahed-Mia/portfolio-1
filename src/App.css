@@ -7,6 +7,9 @@
   outline: none;
   font-family: "Roboto", sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 
 html {
   scroll-behavior: smooth;
