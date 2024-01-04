@@ -1,5 +1,5 @@
 import ServiceCard from "./ServiceCard";
-import "./Services.css";
+import './css/Services.css';
 import { SiAdobeindesign } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { ImHtmlFive } from "react-icons/im";
@@ -8,7 +8,8 @@ import { FaCode } from "react-icons/fa";
 export default function Services() {
   return (
     <>
-      <div id="service"></div><br />
+      <div id="service"></div>
+      <br />
       <div className="services">
         <div className="service-top">
           <h1 className="s-title">

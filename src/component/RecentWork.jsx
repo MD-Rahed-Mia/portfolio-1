@@ -1,13 +1,12 @@
-import "./RecentWork.css";
+import './css/RecentWork.css';
 import { ImCancelCircle } from "react-icons/im";
-
-import project1i1 from "./../../../public/images/rw_project1.png";
-import project1i3 from "./../../../public/images/rw_project1_img3.png";
-import project1i2 from "./../../../public/images/rw_project1_img2.png";
-import Temporal from "./../../../public/images/temporal.png";
-import Temporal1 from "./../../../public/images/temporal1.png";
-import Project3i2 from "./../../../public/images/project3i2.png";
-import Project3i1 from "./../../../public/images/project3i1.png";
+import project1i1 from './../../public/images/rw_project1.png';
+import project1i2 from './../../public/images/rw_project1_img2.png';
+import project1i3 from './../../public/images/rw_project1_img3.png';
+import Temporal from './../../public/images/temporal.png';
+import Temporal1 from './../../public/images/temporal1.png';
+import Project3i2 from './../../public/images/project3i1.png';
+import Project3i1 from './../../public/images/project3i2.png';
 
 import RWCard from "./RWcard";
 import { useState } from "react";

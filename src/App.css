@@ -46,6 +46,18 @@ html {
   position: fixed;
   bottom: 20px;
   right: 15px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   font-size: 2rem;
   color: orangered;
+  transition: all 400ms;
+}
+
+.arrow-btn:hover {
+  background: orangered;
+  color: white;
 }

@@ -1,5 +1,6 @@
-import "./Whyme.css";
-import WhyMe from "./../../../public/images/whyme.jpeg";
+import './css/Whyme.css';
+import WhyMe from './../../public/images/whyme.jpeg';
+
 export default function Whyme() {
   return (
     <>

@@ -1,14 +1,15 @@
 import { useState } from "react";
 import "./App.css";
-import Navbar from "./component/Navbar/Navbar";
-import Hero from "./component/Hero/Hero";
-import AboutMe from "./component/AboutMe/AboutMe";
-import Services from "./component/Services/Services";
-import Whyme from "./component/Whyme/Whyme";
-import RecentWork from "./component/RecentWork/RecentWork";
-import Contact from "./component/Contact/Contact";
-import Footer from "./component/Footer/Footer";
-import ToBottom from "./component/To Bottom/ToBottom";
+import Navbar from "./component/Navbar";
+import Hero from "./component/Hero";
+import AboutMe from "./component/AboutMe";
+import Services from "./component/Services";
+import Whyme from "./component/Whyme";
+import RecentWork from "./component/RecentWork";
+import Contact from "./component/Contact";
+import Footer from "./component/Footer";
+import ToBottom from "./component/ToBottom";
+import Skills from "./component/skills";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <AboutMe />
         <Services />
       </div>
+
+      <Skills />
 
       <Whyme />
 

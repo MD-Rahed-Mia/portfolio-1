@@ -1,7 +1,4 @@
-import "./RecentWork.css";
-import project1i1 from "./../../../public/images/rw_project1.png";
-import project1i3 from "./../../../public/images/rw_project1_img3.png";
-import project1i2 from "./../../../public/images/rw_project1_img2.png";
+import './css/RecentWork.css';
 
 export default function RWCard(props) {
   return (

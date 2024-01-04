@@ -1,4 +1,4 @@
-import "./AboutMe.css";
+import './css/AboutMe.css';
 import { BiSolidCopyAlt } from "react-icons/bi";
 
 export default function AboutMe() {

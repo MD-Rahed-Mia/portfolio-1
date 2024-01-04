@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import "./Contact.css";
-import Loading from "./../../../public/images/loading.gif";
+import './css/Contact.css';
+import name from './../../public/images/loading.gif';
 
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import EmailJs from "@emailjs/browser";

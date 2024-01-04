@@ -1,5 +1,5 @@
+import './css/Navbar.css';
 import { useState } from "react";
-import "./Navbar.css";
 import { ImCancelCircle, ImMenu } from "react-icons/im";
 
 export default function Navbar() {
@@ -7,9 +7,8 @@ export default function Navbar() {
 
   function showMenu() {
     document.querySelector("ul").classList.toggle("active");
-    isMenuVisible = setMenuVisible(!isMenuVisible)
+    isMenuVisible = setMenuVisible(!isMenuVisible);
   }
-
   return (
     <>
       <nav>
@@ -25,6 +24,9 @@ export default function Navbar() {
           </li>
           <li onClick={showMenu}>
             <a href="#aboutMe">About Me</a>
+          </li>
+          <li onClick={showMenu}>
+            <a href="#skills">My Skills</a>
           </li>
           <li onClick={showMenu}>
             <a href="#service">Service</a>

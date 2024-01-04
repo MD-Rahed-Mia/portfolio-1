@@ -1,7 +1,6 @@
-import "./Hero.css";
-import HeroImage from './../../../public/images/rahed.png';
-import HeroBG from './../../../public/images/hero_bg.webp';
-
+import './css/Hero.css';
+import HeroBG from './../../public/images/hero_bg.webp';
+import HeroImage from './../../public/images/rahed.png';
 
 export default function Hero() {
   return (

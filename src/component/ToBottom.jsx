@@ -15,15 +15,20 @@ export default function ToBottom() {
     }
   }
 
-  function handleTop (){
-    window.scrollTo(0,0)
+  function handleTop() {
+    window.scrollTo(0, 0);
   }
 
   window.addEventListener("scroll", getScroll);
 
   return (
     <>
-      <div className="arrow-btn" onClick={handleTop}>{toTop && <FaArrowUp />}</div>
+      {toTop && (
+        <div className="arrow-btn" onClick={handleTop}>
+          {" "}
+          <FaArrowUp />
+        </div>
+      )}
     </>
   );
 }

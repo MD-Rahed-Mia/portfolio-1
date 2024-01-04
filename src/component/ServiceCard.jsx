@@ -1,4 +1,4 @@
-import "./Services.css";
+import './css/Services.css';
 
 export default function ServiceCard(props) {
   return (
