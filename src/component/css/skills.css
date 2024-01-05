@@ -21,9 +21,8 @@
 }
 
 .skills-card {
-  width: 80%;
+  width: 90%;
   background: #e8e8fa;
-  border-radius: 10px;
   min-height: 100px;
   text-align: center;
   margin: 2rem auto;
