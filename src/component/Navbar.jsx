@@ -15,15 +15,15 @@ export default function Navbar() {
         <div className="logo">
           <h1>Rahed</h1>
           <div className="menu-icon" onClick={showMenu}>
-            {isMenuVisible ? <ImCancelCircle /> : <motion.div whileTap={{ scale: 1.2 }}><ImMenu /> </motion.div>}
+            {isMenuVisible ? <ImCancelCircle /> : <ImMenu />}
           </div>
         </div>
         <ul>
 
 
-          <motion.li whileHover={{ scale: 1.4 }} className="active" onClick={showMenu}>
+          <li className="active" onClick={showMenu}>
             <a href="#hero">Home</a>
-          </motion.li>
+          </li>
           <li onClick={showMenu}>
             <a href="#aboutMe">About Me</a>
           </li>
