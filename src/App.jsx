@@ -27,8 +27,11 @@ function App() {
 
           <AboutMe />
         </Slide>
+        <Slide direction="left">
 
-        <Services />
+          <Services />
+        </Slide>
+
       </div>
 
 
