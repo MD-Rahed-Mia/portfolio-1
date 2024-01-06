@@ -10,6 +10,7 @@ import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 import ToBottom from "./component/ToBottom";
 import Skills from "./component/skills";
+import { Fade, Slide } from "react-awesome-reveal";
 
 function App() {
   return (
@@ -17,8 +18,16 @@ function App() {
       <Navbar />
 
       <div className="body">
-        <Hero />
-        <AboutMe />
+
+        <Slide direction="left">
+          <Hero />
+
+        </Slide>
+        <Slide direction="right">
+
+          <AboutMe />
+        </Slide>
+
         <Services />
       </div>
 
