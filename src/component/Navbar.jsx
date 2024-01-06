@@ -1,7 +1,6 @@
 import './css/Navbar.css';
 import { useState } from "react";
 import { ImCancelCircle, ImMenu } from "react-icons/im";
-import { motion } from 'framer-motion';
 
 export default function Navbar() {
   let [isMenuVisible, setMenuVisible] = useState(false);
