@@ -1,6 +1,7 @@
 import './css/Navbar.css';
 import { useState } from "react";
 import { ImCancelCircle, ImMenu } from "react-icons/im";
+import { motion } from 'framer-motion';
 
 export default function Navbar() {
   let [isMenuVisible, setMenuVisible] = useState(false);
@@ -15,13 +16,15 @@ export default function Navbar() {
         <div className="logo">
           <h1>Rahed</h1>
           <div className="menu-icon" onClick={showMenu}>
-            {isMenuVisible ? <ImCancelCircle /> : <ImMenu />}
+            {isMenuVisible ? <ImCancelCircle /> : <motion.div whileTap={{ scale: 1.2 }}><ImMenu /> </motion.div>}
           </div>
         </div>
         <ul>
-          <li className="active" onClick={showMenu}>
+
+
+          <motion.li whileHover={{ scale: 1.4 }} className="active" onClick={showMenu}>
             <a href="#hero">Home</a>
-          </li>
+          </motion.li>
           <li onClick={showMenu}>
             <a href="#aboutMe">About Me</a>
           </li>

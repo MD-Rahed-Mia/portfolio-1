@@ -2,10 +2,9 @@ import React from "react";
 import "./css/skills.css";
 import SkillCard from "./skills-card";
 import ReactIcon from "./../../public/images/react.png";
-import JS from './../../public/images/js.png';
-import HTML from './../../public/images/html.png';
-import PHP from './../../public/images/php.png';
-
+import JS from "./../../public/images/js.png";
+import HTML from "./../../public/images/html.png";
+import PHP from "./../../public/images/php.png";
 
 const skillData = [
   {
@@ -43,10 +42,13 @@ export default function Skills() {
     <>
       <div id="skills" className="skills">
         <h1 className="skills-heading">My key skills</h1>
-        <p className="p">Skills are the key pandamental's for creating efficient web application.</p>
+        <p className="p">
+          Skills are the key pandamental's for creating efficient web
+          application.
+        </p>
         <div className="skills-cards">
           {skillData.map((ele) => {
-            return <SkillCard item={ele}/>
+            return <SkillCard item={ele} />;
           })}
         </div>
       </div>
